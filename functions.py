@@ -89,7 +89,7 @@ def evaluate_model(clf_, X_tr, X_te, y_tr, y_te, cls_rpt_tr=False, show=True, cl
         fig, ax = plt.subplots(figsize=(10,5), ncols=2)
         
         metrics.plot_confusion_matrix(clf_,X_te,y_te,cmap="Greens",
-                                      normalize='all',ax=ax[0])
+                                      normalize='true',ax=ax[0])
         ax[0].set(title='Confusion Matrix Test Data')
         ax[0].grid(False)        
 
@@ -156,7 +156,7 @@ def summarize_model(clf_, X_tr, X_te, y_tr, y_te, tree=False):
     if tree:
         fig, ax = plt.subplots(figsize=(10,5), nrows=2)
 
-        metrics.plot_confusion_matrix(clf_,X_te,y_te,cmap="Greens", normalize='all',
+        metrics.plot_confusion_matrix(clf_,X_te,y_te,cmap="Greens", normalize='true',
                                      ax=ax[0])
         ax[0].set(title='Confusion Matrix')
         ax[0].grid(False)
@@ -165,7 +165,7 @@ def summarize_model(clf_, X_tr, X_te, y_tr, y_te, tree=False):
         plt.tight_layout()
         
     else:
-        metrics.plot_confusion_matrix(clf_,X_te,y_te,cmap="Greens", normalize='all')
+        metrics.plot_confusion_matrix(clf_,X_te,y_te,cmap="Greens", normalize='true')
         plt.title('Confusion Matrix')
         plt.grid(False)
         plt.tight_layout()
