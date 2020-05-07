@@ -88,7 +88,7 @@ def evaluate_model(clf_, X_tr, X_te, y_tr, y_te, cls_rpt_tr=False, show=True, cl
         ## Confusion Matrix
         fig, ax = plt.subplots(figsize=(10,5), ncols=2)
         
-        metrics.plot_confusion_matrix(clf_,X_te,y_te,cmap="Greens",
+        metrics.plot_confusion_matrix(clf_,X_te,y_te,cmap="YlOrRd",
                                       normalize='true',ax=ax[0])
         ax[0].set(title='Confusion Matrix Test Data')
         ax[0].grid(False)        
@@ -148,6 +148,7 @@ def summarize_model(clf_, X_tr, X_te, y_tr, y_te, tree=False):
     
     import sklearn.metrics as metrics
     import matplotlib.pyplot as plt
+    import pandas as pd
     
     y_hat_tr, y_hat_te = fit_n_pred(clf_, X_tr, X_te, y_tr)
     print('Classification Report:')
@@ -156,7 +157,7 @@ def summarize_model(clf_, X_tr, X_te, y_tr, y_te, tree=False):
     if tree:
         fig, ax = plt.subplots(figsize=(10,5), nrows=2)
 
-        metrics.plot_confusion_matrix(clf_,X_te,y_te,cmap="Greens", normalize='true',
+        metrics.plot_confusion_matrix(clf_,X_te,y_te,cmap="YlOrRd", normalize='true',
                                      ax=ax[0])
         ax[0].set(title='Confusion Matrix')
         ax[0].grid(False)
@@ -165,7 +166,13 @@ def summarize_model(clf_, X_tr, X_te, y_tr, y_te, tree=False):
         plt.tight_layout()
         
     else:
-        metrics.plot_confusion_matrix(clf_,X_te,y_te,cmap="Greens", normalize='true')
+        clf_coef = pd.Series(clf_.coef_[0], index=X_tr.columns, name='Normal')
+        abs_coef = pd.Series(abs(clf_.coef_[0]), index=X_tr.columns, name='Absolute')
+        coef_all = pd.concat([clf_coef, abs_coef], axis=1)
+        coef_all.sort_values('Absolute', ascending=False, inplace=True)
+        coef_all.head(20)['Normal'].plot(kind='barh')
+
+        metrics.plot_confusion_matrix(clf_,X_te,y_te,cmap="YlOrRd", normalize='true')
         plt.title('Confusion Matrix')
         plt.grid(False)
         plt.tight_layout()
@@ -222,13 +229,14 @@ def NA_handler_bin(df):
     print(df['R_Stance'].value_counts(normalize=True))
     
     ## Making list for random choices
-    stance_list = list(df['B_Stance'].dropna().unique())
+    stance_vc = df['B_Stance'].value_counts(normalize=True)
+    stance_list = list(stance_vc.index)
     print('\nStances:')
     print(stance_list, '\n')
 
     ## Making array of probabilities for corresp. stances
     print('Stance Probabilities:')
-    stance_ps = df['B_Stance'].value_counts(normalize=True).values
+    stance_ps = list(stance_vc.values)
     print(stance_ps, '\n')
     
     ## Using for loop to randomly fill stances according to probabilities 
