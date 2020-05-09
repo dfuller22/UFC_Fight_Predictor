@@ -168,9 +168,10 @@ def summarize_model(clf_, X_tr, X_te, y_tr, y_te, tree=False):
     else:
         clf_coef = pd.Series(clf_.coef_[0], index=X_tr.columns, name='Normal')
         abs_coef = pd.Series(abs(clf_.coef_[0]), index=X_tr.columns, name='Absolute')
-        coef_all = pd.concat([clf_coef, abs_coef], axis=1)
-        coef_all.sort_values('Absolute', ascending=False, inplace=True)
-        coef_all.head(20)['Normal'].plot(kind='barh')
+        posi_coef = pd.Series((clf_coef > 0), name='Positive')
+        coef_all = pd.concat([clf_coef, abs_coef, posi_coef], axis=1)
+        coef_all.sort_values('Absolute', ascending=True, inplace=True)
+        coef_all.tail(20)['Normal'].plot(kind='barh', color=coef_all['Positive'].map({True:'b',False:'r'})
 
         metrics.plot_confusion_matrix(clf_,X_te,y_te,cmap="YlOrRd", normalize='true')
         plt.title('Confusion Matrix')
