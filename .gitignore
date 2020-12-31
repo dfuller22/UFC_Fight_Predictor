@@ -125,7 +125,7 @@ dmypy.json
 .pyre/
 
 # Powerpoints
-.pptx
+*.pptx
 
 # Unnecessary data/files
 .gitattributes
