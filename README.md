@@ -1,13 +1,3 @@
-## Final Project Submission
-
-Please fill out:
-* Student name: **Darius Fuller**
-* Student pace: self paced / **part time** / full time
-* Scheduled project review date/time: **TBD**
-* Instructor name: **James Irving**
-* Blog post URL: **Insert Here**
-
-
 ### The problem and plans
 
 #### The problem and inspiration
@@ -849,7 +839,7 @@ mg.matrix(df);
 ```
 
 
-![png](student_files/student_24_0.png)
+![png](Images/student_24_0.png)
 
 
 > This confirms my initial thoughts visually, I will check one last time by filtering those without W/L streaks. (It may be useful later to make a column for first fighters)
@@ -889,7 +879,7 @@ mg.matrix(df_fill);
 ```
 
 
-![png](student_files/student_31_0.png)
+![png](Images/student_31_0.png)
 
 
 #### Filling Stances
@@ -969,7 +959,7 @@ mg.matrix(df_fill);
 ```
 
 
-![png](student_files/student_37_0.png)
+![png](Images/student_37_0.png)
 
 
 > Its getting better bit by bit!
@@ -1309,7 +1299,7 @@ mg.matrix(df_fill);
 ```
 
 
-![png](student_files/student_48_0.png)
+![png](Images/student_48_0.png)
 
 
 > Needing to fill values that did not have Height nor Reach to fill from dictionary
@@ -1516,7 +1506,7 @@ mg.matrix(df_fill);
 ```
 
 
-![png](student_files/student_58_0.png)
+![png](Images/student_58_0.png)
 
 
 
@@ -1791,7 +1781,7 @@ mg.matrix(df_fill);
 ```
 
 
-![png](student_files/student_71_0.png)
+![png](Images/student_71_0.png)
 
 
 #### Filling Age
@@ -1836,7 +1826,7 @@ mg.matrix(df_fill);
 ```
 
 
-![png](student_files/student_76_0.png)
+![png](Images/student_76_0.png)
 
 
 #### Filling Total Time Fought
@@ -1858,7 +1848,7 @@ mg.matrix(df_fill);
 ```
 
 
-![png](student_files/student_79_0.png)
+![png](Images/student_79_0.png)
 
 
 > Finally done!
@@ -2401,7 +2391,7 @@ ax.set_xticklabels(ax.get_xticklabels(), rotation=45,
 ```
 
 
-![png](student_files/student_90_0.png)
+![png](Images/student_90_0.png)
 
 
 > AVGS show some correlation, but nothing demonstrates a strong connection to the winner category
@@ -3067,7 +3057,7 @@ times = dlf.time_models(X_train_sca, X_test_sca, y_train, y_test, mods, mod_labs
     
 
 
-![png](student_files/student_101_2.png)
+![png](Images/student_101_2.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 08:43 PM ----
@@ -3097,7 +3087,7 @@ times = dlf.time_models(X_train_sca, X_test_sca, y_train, y_test, mods, mod_labs
     
 
 
-![png](student_files/student_101_6.png)
+![png](Images/student_101_6.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 08:43 PM ----
@@ -3129,7 +3119,7 @@ times = dlf.time_models(X_train_sca, X_test_sca, y_train, y_test, mods, mod_labs
     
 
 
-![png](student_files/student_101_10.png)
+![png](Images/student_101_10.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 08:43 PM ----
@@ -3156,7 +3146,7 @@ times = dlf.time_models(X_train_sca, X_test_sca, y_train, y_test, mods, mod_labs
     
 
 
-![png](student_files/student_101_14.png)
+![png](Images/student_101_14.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 08:43 PM ----
@@ -3182,7 +3172,7 @@ times = dlf.time_models(X_train_sca, X_test_sca, y_train, y_test, mods, mod_labs
     
 
 
-![png](student_files/student_101_18.png)
+![png](Images/student_101_18.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 08:43 PM ----
@@ -3216,7 +3206,7 @@ times = dlf.time_models(X_train_sca, X_test_sca, y_train, y_test, mods, mod_labs
     
 
 
-![png](student_files/student_101_22.png)
+![png](Images/student_101_22.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 08:44 PM ----
@@ -3246,7 +3236,7 @@ times = dlf.time_models(X_train_sca, X_test_sca, y_train, y_test, mods, mod_labs
     
 
 
-![png](student_files/student_101_26.png)
+![png](Images/student_101_26.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 08:44 PM ----
@@ -3343,7 +3333,7 @@ times = dlf.time_models(X_trn_sca_resmp, X_test_sca, y_trn_resmp, y_test, mods, 
     
 
 
-![png](student_files/student_107_2.png)
+![png](Images/student_107_2.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 08:46 PM ----
@@ -3373,7 +3363,7 @@ times = dlf.time_models(X_trn_sca_resmp, X_test_sca, y_trn_resmp, y_test, mods, 
     
 
 
-![png](student_files/student_107_6.png)
+![png](Images/student_107_6.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 08:46 PM ----
@@ -3405,7 +3395,7 @@ times = dlf.time_models(X_trn_sca_resmp, X_test_sca, y_trn_resmp, y_test, mods, 
     
 
 
-![png](student_files/student_107_10.png)
+![png](Images/student_107_10.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 08:47 PM ----
@@ -3432,7 +3422,7 @@ times = dlf.time_models(X_trn_sca_resmp, X_test_sca, y_trn_resmp, y_test, mods, 
     
 
 
-![png](student_files/student_107_14.png)
+![png](Images/student_107_14.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 08:47 PM ----
@@ -3458,7 +3448,7 @@ times = dlf.time_models(X_trn_sca_resmp, X_test_sca, y_trn_resmp, y_test, mods, 
     
 
 
-![png](student_files/student_107_18.png)
+![png](Images/student_107_18.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 08:47 PM ----
@@ -3492,7 +3482,7 @@ times = dlf.time_models(X_trn_sca_resmp, X_test_sca, y_trn_resmp, y_test, mods, 
     
 
 
-![png](student_files/student_107_22.png)
+![png](Images/student_107_22.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 08:49 PM ----
@@ -3522,7 +3512,7 @@ times = dlf.time_models(X_trn_sca_resmp, X_test_sca, y_trn_resmp, y_test, mods, 
     
 
 
-![png](student_files/student_107_26.png)
+![png](Images/student_107_26.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 08:49 PM ----
@@ -3799,7 +3789,7 @@ time_fin = dlf.time_models(X_trn_sca_resmp, X_test_sca, y_trn_resmp, y_test, [xg
     
 
 
-![png](student_files/student_129_2.png)
+![png](Images/student_129_2.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 09:18 PM ----
@@ -4144,7 +4134,7 @@ times_bin = dlf.time_models(X_train_sca_bin, X_test_sca_bin, y_train_bin, y_test
     
 
 
-![png](student_files/student_142_2.png)
+![png](Images/student_142_2.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 09:24 PM ----
@@ -4173,7 +4163,7 @@ times_bin = dlf.time_models(X_train_sca_bin, X_test_sca_bin, y_train_bin, y_test
     
 
 
-![png](student_files/student_142_6.png)
+![png](Images/student_142_6.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 09:24 PM ----
@@ -4204,7 +4194,7 @@ times_bin = dlf.time_models(X_train_sca_bin, X_test_sca_bin, y_train_bin, y_test
     
 
 
-![png](student_files/student_142_10.png)
+![png](Images/student_142_10.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 09:24 PM ----
@@ -4230,7 +4220,7 @@ times_bin = dlf.time_models(X_train_sca_bin, X_test_sca_bin, y_train_bin, y_test
     
 
 
-![png](student_files/student_142_14.png)
+![png](Images/student_142_14.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 09:24 PM ----
@@ -4255,7 +4245,7 @@ times_bin = dlf.time_models(X_train_sca_bin, X_test_sca_bin, y_train_bin, y_test
     
 
 
-![png](student_files/student_142_18.png)
+![png](Images/student_142_18.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 09:24 PM ----
@@ -4288,7 +4278,7 @@ times_bin = dlf.time_models(X_train_sca_bin, X_test_sca_bin, y_train_bin, y_test
     
 
 
-![png](student_files/student_142_22.png)
+![png](Images/student_142_22.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 09:24 PM ----
@@ -4317,7 +4307,7 @@ times_bin = dlf.time_models(X_train_sca_bin, X_test_sca_bin, y_train_bin, y_test
     
 
 
-![png](student_files/student_142_26.png)
+![png](Images/student_142_26.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 09:24 PM ----
@@ -4421,7 +4411,7 @@ times_bin_fin = dlf.time_models(X_train_sca_bin, X_test_sca_bin, y_train_bin, y_
     
 
 
-![png](student_files/student_149_2.png)
+![png](Images/student_149_2.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 09:29 PM ----
@@ -4514,7 +4504,7 @@ df_fill_bin = dlf.NA_handler_bin(df_fill_bin);
 
 
 
-![png](student_files/student_157_5.png)
+![png](Images/student_157_5.png)
 
 
 #### Endcoding Categoricals
@@ -4900,7 +4890,7 @@ times_bin2 = dlf.time_models(X_train_sca_bin_skim, X_test_sca_bin_skim, y_train_
     
 
 
-![png](student_files/student_170_2.png)
+![png](Images/student_170_2.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 09:47 PM ----
@@ -4929,7 +4919,7 @@ times_bin2 = dlf.time_models(X_train_sca_bin_skim, X_test_sca_bin_skim, y_train_
     
 
 
-![png](student_files/student_170_6.png)
+![png](Images/student_170_6.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 09:47 PM ----
@@ -4960,7 +4950,7 @@ times_bin2 = dlf.time_models(X_train_sca_bin_skim, X_test_sca_bin_skim, y_train_
     
 
 
-![png](student_files/student_170_10.png)
+![png](Images/student_170_10.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 09:47 PM ----
@@ -4986,7 +4976,7 @@ times_bin2 = dlf.time_models(X_train_sca_bin_skim, X_test_sca_bin_skim, y_train_
     
 
 
-![png](student_files/student_170_14.png)
+![png](Images/student_170_14.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 09:47 PM ----
@@ -5011,7 +5001,7 @@ times_bin2 = dlf.time_models(X_train_sca_bin_skim, X_test_sca_bin_skim, y_train_
     
 
 
-![png](student_files/student_170_18.png)
+![png](Images/student_170_18.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 09:47 PM ----
@@ -5044,7 +5034,7 @@ times_bin2 = dlf.time_models(X_train_sca_bin_skim, X_test_sca_bin_skim, y_train_
     
 
 
-![png](student_files/student_170_22.png)
+![png](Images/student_170_22.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 09:47 PM ----
@@ -5073,7 +5063,7 @@ times_bin2 = dlf.time_models(X_train_sca_bin_skim, X_test_sca_bin_skim, y_train_
     
 
 
-![png](student_files/student_170_26.png)
+![png](Images/student_170_26.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 09:47 PM ----
@@ -5203,7 +5193,7 @@ times_skim_fin = dlf.time_models(X_trn_sca_resmp_bin_skim, X_test_sca_bin_skim, 
     
 
 
-![png](student_files/student_178_2.png)
+![png](Images/student_178_2.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 10:05 PM ----
@@ -5231,7 +5221,7 @@ times_skim_fin = dlf.time_models(X_trn_sca_resmp_bin_skim, X_test_sca_bin_skim, 
     
 
 
-![png](student_files/student_178_6.png)
+![png](Images/student_178_6.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 10:05 PM ----
@@ -5269,7 +5259,7 @@ times_skim_fin = dlf.time_models(X_trn_sca_resmp_bin_skim, X_test_sca_bin_skim, 
     
 
 
-![png](student_files/student_178_10.png)
+![png](Images/student_178_10.png)
 
 
     ---- Timer stopped at: 04/27/2020 - 10:08 PM ----
@@ -5317,7 +5307,7 @@ dlf.summarize_model(xgb_fin, X_trn_sca_resmp, X_test_sca, y_trn_resmp, y_test, t
     
 
 
-![png](student_files/student_184_2.png)
+![png](Images/student_184_2.png)
 
 
 ##### Binary Classifier (No Draws)
@@ -5353,7 +5343,7 @@ dlf.summarize_model(log_clf_bin_fin, X_trn_sca_resmp_bin, X_test_sca_bin, y_trn_
     
 
 
-![png](student_files/student_187_2.png)
+![png](Images/student_187_2.png)
 
 
 
@@ -5408,7 +5398,7 @@ dlf.summarize_model(log_skim1, X_trn_sca_resmp_bin_skim, X_test_sca_bin_skim, y_
     
 
 
-![png](student_files/student_191_2.png)
+![png](Images/student_191_2.png)
 
 
 
